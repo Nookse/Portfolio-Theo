@@ -63,3 +63,47 @@ nav.nav {
 nav.nav li {
     color: white;
 }
+
+/* interet */
+
+.interet {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.interet-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.terminal-icon {
+    font-size: 50px;
+    color: blue;
+}
+
+.interet-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+
+}
+
+/* Parcours pro */
+
+.section-title {
+    font-size: 50px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color:blue;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
