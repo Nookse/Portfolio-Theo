@@ -1,52 +1,124 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio-Theo</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <title>Portfolio-Theo</title>
 </head>
-<!-- <body>
-    <section class="top-page">
-        <header class="header">
-            <img src="images/logofinal.png" alt="Logo du site">
-            <nav class="nav">
-                <li>Accueil</li>
-                <li>Projet Professionnel</li>
-                <li>Projet Personnel</li>
-            </nav>
+
+<body>
+    <section id="home" class="home-container">
+        <header id="header" class="header">
+            <img src="images/logofinal.png" alt="Logo du site" class="logo">
+            <ul class="nav-links">
+                <li>
+                    <a href="#" data-text="Home">Home</a>
+                </li>
+                <li>
+                    <a href="#Professional-project" data-text="Professional project">Professional project</a>
+                </li>
+                <li>
+                    <a href="#Personnal-project" data-text="Personnal project">Personnal project</a>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
         </header>
-        <div class="landing-page">
+        <div class="landing">
             <h1 class="big-title">Rodrigues Théo</h1>
-            <a class="scroll-down" href="">Scroll <i class="fas fa-angle-down"></i></a>
+            <a href="#delivery" class="delivery-link">
+                <span class="scroll-text" data-text="Scroll">Scroll</span>
+                <i class="scroll-icon fas fa-angle-down"></i>
+            </a>
         </div>
-
-    </section> -->
-
-    <!-- <section class="interet">
-        <div class="interet-item">
-            <i class="fas fa-terminal terminal-icon"></i>
-            <p class="interet-details">Embedded Systems</p>
-        </div>
-        <div class="interet-item">
-            <i class="fas fa-mountain terminal-icon"></i>
-            <p class="interet-details">Adventures</p>
-        </div>
-        <div class="interet-item">
-            <i class="fas fa-running terminal-icon"></i>
-            <p class="interet-details">Sports</p>
-        </div>
-    </section> -->
-
-
-    <section class="Parcours-professionnel">
-            <h2 class="section-title">
-                Parcours professionnel
-            </h2>
-            <div class="etapes"></div>
     </section>
+    <section id="delivery" class="delivery-container">
+        <div class="shop">
+            <i class="fas fa-terminal delivery-icon"></i>
+            <p class="box-content">
+                Embedded Systems
+            </p>
+        </div>
+        <div class="withdrawal">
+            <i class="fas fa-mountain delivery-icon"></i>
+            <p class="box-content">
+                Adventures
+            </p>
+        </div>
+        <div class="delivery">
+            <i class="fas fa-running delivery-icon"></i>
+            <p class="box-content">
+                Sports
+            </p>
+        </div>
+    </section>
+    <section id="Professional-project" class="Professional-project-container">
+        <h1 class="section-title">Professionnal career</h1>
+        <div class="best-plants">
+            <a href="https://www.bonsecours66.com/" class="plant-box no-grid plant1"></a>
+            <a href="https://www.cesi.fr/ingenieur/cursus-ingenieur-systemes-electriques-et-electroniques-embarques-alternance/" class="plant-box no-grid plant2"></a>
+            <a href="https://www.lid.tech/fr/accueil/" class="plant-box no-grid plant3"></a>
+            <a href="https://www.airbus.com/en" class="plant-box no-grid plant4"></a>
+        </div>
+    </section>
+    <section id="Personnal-project" class="Personnal-project-container">
+        <h1 class="section-title">Personal achievement</h1>
+        <div class="grid-plants">
+            <a href="#" class="plant-box grid plant-grid1">
+                <div class="plant-bio">
+                    <h1 class="plant-name">4L Trophy</h1>
+                    <h3 class="plant-price">2023-2024</h3>
+                </div>
+            </a>
+            <a href="#" class="plant-box grid plant-grid2">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Electronic projects</h1>
+                    <h3 class="plant-price">2024</h3>
+                </div>
+            </a>
+            <a href="#" class="plant-box grid plant-grid3">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Aeronautics Initiation Certificate</h1>
+                    <h3 class="plant-price">2024</h3>
+                </div>
+            </a>
+            <a href="#" class="plant-box grid plant-grid4">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Federal tennis initiator</h1>
+                    <h3 class="plant-price">2019</h3>
+                </div>
+            </a>
+            <a href="#" class="plant-box grid plant-grid5">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Software projects</h1>
+                    <h3 class="plant-price">2023</h3>
+                </div>
+            </a>
+            <a href="#" class="plant-box grid plant-grid6">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Sports projects</h1>
+                    <h3 class="plant-price">2022</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; 2024 - Rodrigues Théo</span>
+        <a href="#" class="conditions">Home</a>
+    </footer>
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
 
-
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
 </body>
+
 </html>
