@@ -68,7 +68,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 100px;
 }
 
 .big-title {
@@ -77,6 +76,7 @@
     font-size: 80px;
     font-family: "Abril Fatface", cursive;
     font-weight: 100;
+    padding: 0 7%;
 }
 
 .delivery-link {
@@ -86,7 +86,8 @@
     align-items: center;
     position: absolute;
     bottom: 30px;
-    width: 70px;
+    left: 49%;
+    padding: 0;
     justify-content: space-between;
     overflow: hidden;
 }
@@ -108,7 +109,7 @@
 }
 
 .scroll-icon {
-    font-size: 25px;
+    font-size: 65px;
     color: white;
 }
 
