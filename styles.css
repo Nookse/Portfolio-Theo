@@ -11,7 +11,7 @@
 
 .home-container {
     min-height: 100vh;
-    background: url('images/pexels-stywo-1054218.png');
+    background: url('./images/pexels-stywo-1054218.png');
     background-size: cover;
 }
 
@@ -170,19 +170,19 @@
 }
 
 .plant1 {
-    background: url('images/pro/ndbs.png');
+    background: url('./images/pro/ndbs.png');
 }
 
 .plant2 {
-    background: url('images/pro/cesi.png');
+    background: url('./images/pro/cesi.png');
 }
 
 .plant3 {
-    background: url('images/pro/lid.png');
+    background: url('./images/pro/lid.png');
 }
 
 .plant4 {
-    background: url('images/pro/airbus.png');
+    background: url('./images/pro/airbus.png');
 }
 
 .plant-box::before {
@@ -240,35 +240,35 @@
 }
 
 .plant-grid1 {
-    background: url('images/perso/4l.JPG');
+    background: url('./images/perso/4l.JPG');
     grid-column: 1 / 3;
     grid-row: 1 / 3;
 }
 
 .plant-grid2 {
-    background: url('images/perso/elec.jpg');
+    background: url('./images/perso/elec.jpg');
     grid-column: 3 / 5;
 }
 
 .plant-grid3 {
-    background: url('images/perso/bia.jpg');
+    background: url('./images/perso/bia.jpg');
     grid-column: 3 / 5;
 }
 
 .plant-grid4 {
-    background: url('images/perso/tennis.JPG');
+    background: url('./images/perso/tennis.JPG');
     grid-column: 1;
     grid-row: 3 / 5;
 }
 
 .plant-grid5 {
-    background: url('images/perso/soft.jpg');
+    background: url('./images/perso/soft.jpg');
     grid-column: 2 / 4;
     grid-row: 3 / 5;
 }
 
 .plant-grid6 {
-    background: url('images/perso/alpi.JPEG');
+    background: url('./images/perso/alpi.JPEG');
     grid-column: 4;
     grid-row: 3 / 5;
 }
